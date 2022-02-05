@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------------------------
+### DESCRIÇÃO ###
+
+
+write(fd, *buf, size bytes)
+	fd = The file descriptor of where to write the output. 
+			You can either use a file descriptor obtained from the open system call, 
+			or you can use 0, 1, or 2, to refer to standard input, standard output, or standard error, respectively.
+			example fd = 1 -> prints the output on the terminal 
+	*buf = A pointer to a buffer of at least nbytes bytes, which will be written to the file
+	size bytes = The number of bytes to write. If smaller than the provided buffer, 
+				 the output is truncated.
+
+
+### IMPORTANTE !!!!!!!!!! ###
+Usar sempre CHAR na função write, pois ela sempre vai buscar o valor correspondente da tabela ASCII
+
+------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------
+### EXEMPLO ###
+
+int n;
+n = 5
+write(1, &n, 1) -> não vai imprimir o numero 5 pq um inteiro pega 4 bytes,
+				 e não apenas 1 (imprimiria apenas o primeiro byte)
+write(1 &n, 4) -> não imprime o 5 porque ele se baseia na tabela ASCII 
+				 vai encontrar o valor correspondente ao que está nos 4 bytes pela tabela ASCII -> que não vai ser o char 
+
+------------------------------------------------------------------------------------------------
+

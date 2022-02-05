@@ -1,0 +1,19 @@
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### CÓDIGO ###
+
+	ls -pmu
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+### LS ###
+
+man ls 
+	−p        Write a <slash> ('/') after each filename if that file is a directory.
+	−m        Stream output format; list pathnames across the page, separated by a <comma> character followed by a <space> character. 
+			  Use a <newline> character as  the  list terminator and after the separator sequence when there is not room on a line for the next list entry. 
+			  This option disables long format output.
+	−u        Use time of last access (see the Base Definitions volume of POSIX.1‐2008, <sys_stat.h>) 
+			  instead of last modification of the file for sorting  (−t)  or  writing (−l).
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------

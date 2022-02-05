@@ -1,0 +1,28 @@
+--------------------------------------------------------------------------------------
+& -> retorna o endereço 
+* -> avalia o valor do endereço de memória (retorna o valor)
+
+#### EXEMPLO 1 #####
+char h; 
+h = '4';
+&h -> endereço onde h esta armazenado 
+*h -> procura o que esta no endereço de memoria com o valor traduzido da tabela ascii (Ox52)
+*&h -> retorna o 4
+	- puxa o endereço de h e desse endereço puxa o valor 
+
+
+#### EXEMPLO 2 ####
+char * string; (uma variavel de string que aponta para char)
+char *string = "Hello";
+string -> endereço de memória 
+*string -> valor de string, retorna o H
+string[0] -> pega o endereço string e retorna o valor do primeiro endereço de memória 
+	- string[0] == *string
+string[1] -> == *(string+1)
+--------------------------------------------------------------------------------------
+
+
+
+
+
+

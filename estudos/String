@@ -1,0 +1,15 @@
+--------------------------------------------------------------------------------------------
+### ALOCAÇÃO DE MEMÓRIA PARA STRINGS ####
+
+char*string; -> aponta para um unico char na memória
+char string[10]; -> separa na memória 10 endereços continuos do tipo char
+
+------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------
+### BYTE NULO ###
+- ultimo byte de uma string é \0 -> byte nulo 
+	é como o programa sabe onde acaba a string
+	até encontrar o byte nulo tudo (a partir do endereço passado) faz parte da string
+
+-----------------------------------------------------------------------------------------------

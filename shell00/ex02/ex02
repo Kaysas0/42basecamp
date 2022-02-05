@@ -1,0 +1,25 @@
+----------------------------------------------------
+### CHMOD ###
+	chmod -> change mode 
+	permite alterar as permissões de acesso de arquivos
+---------------------------------------------------
+
+-----------------------------------------------------
+### TOUCH -t ###
+	permite alterar a data e hora de arquivos/diretórios 
+
+### TOUCH -h -t ###
+	permite alterar a data e hora de soft link
+------------------------------------------------------
+
+-----------------------------------------------------
+### HARD LINK // SOFT LINK ###
+	ln arquivo_original arquivo_hardlink
+	ln -s arquivo_original arquivo_softlink
+
+### EXPLICAÇÃO ###
+	A symbolic or soft link is an actual link to the original file, whereas a hard link is a mirror copy of the original file. 
+	If you delete the original file, the soft link has no value, because it points to a non-existent file.
+	But in the case of hard link, it is entirely opposite. Even if you delete the original file, 
+	the hard link will still has the data of the original file. Because hard link acts as a mirror copy of the original file.
+----------------------------------------------------
